@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="app" class="box">
+    <div v-for="site in sites" class="box-bd">
+      <a :href=site[1]>
+        <img :src=site[2] alt="" width="40" height="40">
+        <h4>{{site[0]}}</h4>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
