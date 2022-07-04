@@ -9,9 +9,9 @@ window.addEventListener('load', function name() {
 
           ["bilibili", "https://www.bilibili.com", "https://www.bilibili.com/favicon.ico"],
 
-          ["虎扑", "https://bbs.hupu.com/all-gambia", "http://w1.hoopchina.com.cn/images/pc/old/favicon.ico"],
+          ["虎扑", "https://bbs.hupu.com/all-gambia", "https://bbs.hupu.com/favicon.ico"],
 
-          ["观察者", "https://www.guancha.cn/", "https://i.guancha.cn/images/favorite.ico"],
+          ["观察者", "https://www.guancha.cn/", "https://www.guancha.cn/favicon.ico"],
 
           ["google", "https://www.google.co.jp/", "#"],
 
