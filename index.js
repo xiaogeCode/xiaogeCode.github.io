@@ -15,9 +15,9 @@ window.addEventListener('load', function name() {
 
           ["google", "https://www.google.co.jp/", "#"],
 
-          ["anyknew", "https://www.anyknew.com/#/", "https://f0cdn.anyknew.com/web/img/icons/favicon-32x32.png"],
+          ["anyknew", "https://www.anyknew.com/", "https://f0cdn.anyknew.com/web/img/icons/favicon-32x32.png"],
 
-          ["douyu", "[https://www.douyu.com/", "https://www.douyu.com/favicon.ico"],
+          ["douyu", "https://www.douyu.com/", "https://www.douyu.com/favicon.ico"],
 
           ["nga", "https://bbs.nga.cn/thread.php?fid=650&rand=168", "https://bbs.nga.cn/favicon.ico"],
 
