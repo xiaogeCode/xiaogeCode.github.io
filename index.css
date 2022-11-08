@@ -41,10 +41,10 @@
   /* box 模块开始 */
   .box {
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
       grid-gap: 10px;
       margin-top: 20px;
-      padding: 10px;
+      padding: 20px;
   }
 
   .box .box-bd {
