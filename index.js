@@ -42,8 +42,8 @@ window.addEventListener('load', function name() {
         series: [{
             type: "map",
             map: mapArea,
-            left: "25%",
-            right: "25%"
+            // left: "25%",
+            // right: "25%"
         }],
     });
     chart.on('click', function (params) {
