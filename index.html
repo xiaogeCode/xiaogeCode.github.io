@@ -2,25 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>xiaoTab</title>
-  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>xiaoTab</title>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <script src="./echarts/echarts.js"></script>
+    <script src="./echarts/china.js"></script>
+    <script src="./echarts/world.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
-  <div id="app" class="box">
-    <div v-for="site in sites" class="box-bd">
-      <a :href=site[1]>
-        <img :src=site[1]+"/favicon.ico" alt="" width="32" height="32">
-        <h4>{{site[0]}}</h4>
-      </a>
+    <!-- <div id="map"></div> -->
+    <div id="app" class="box">
+
+        <div v-for="site in sites" class="box-bd">
+            <a :href=site[1]>
+                <img :src=site[1]+"/favicon.ico" alt="" width="32" height="32">
+                <h4>{{site[0]}}</h4>
+            </a>
+        </div>
     </div>
-  </div>
+    <!-- <div id="map" style="width:1200px;height:666px;"></div> -->
+    <div id="map"></div>
+
 </body>
 
 </html>
