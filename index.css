@@ -40,28 +40,26 @@
 
   /* box 模块开始 */
   .box {
-      /* float: left; */
-      margin-right: auto;
-      margin-left: auto;
-      /* background-color: green; */
-      margin-top: 60px;
-      align-items: center;
-      width: 80%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 10px;
+      padding: 10px;
   }
 
   .box .box-bd {
-      float: left;
-      margin-top: 20px;
-      /* background-color: red; */
-      width: 20%;
+      /* border: 1px solid black; */
+      text-align: center;
+      font-size: 15px;
 
   }
 
   /* box 模块结束 */
   #map {
-      float: left;
+      margin-left: auto;
+      margin-right: auto;
+
       /* background-color: brown; */
-      align-content: center;
+
       width: 80%;
       height: 600px;
   }

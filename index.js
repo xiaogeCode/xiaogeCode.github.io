@@ -37,12 +37,17 @@ window.addEventListener('load', function name() {
         computed: {},
         mounted() { }
     });
-    var chart = echarts.init(document.getElementById("map"));
+    let chart = echarts.init(document.getElementById("map"));
     chart.setOption({
         series: [{
-            "type": "map",
-            "map": mapArea
-        }]
+            type: "map",
+            map: mapArea,
+            left: "25%",
+            right: "25%"
+        }],
+    });
+    chart.on('click', function (params) {
+        console.log(params);
     });
 
 
