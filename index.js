@@ -1,6 +1,8 @@
+
+let chart;
+let mapArea = 'china'
 window.addEventListener('load', function name() {
 
-    let mapArea = 'china'
     let app = new Vue({
         el: '#app',
         data: {
@@ -37,11 +39,12 @@ window.addEventListener('load', function name() {
         computed: {},
         mounted() { }
     });
-    let chart = echarts.init(document.getElementById("map"));
+    chart = echarts.init(document.getElementById("map"));
     chart.setOption({
         series: [{
             type: "map",
             map: mapArea,
+            top: 10
             // left: "25%",
             // right: "25%"
         }],
@@ -49,9 +52,13 @@ window.addEventListener('load', function name() {
     chart.on('click', function (params) {
         console.log(params);
     });
+    function resizeWindow() {
+    }
 
 
-})
-
+});
+function resizeWindow() {
+    chart.resize();
+}
 
 
