@@ -1,12 +1,12 @@
 
 let chart;
-let mapArea = 'china'
+let app;
 window.addEventListener('load', function name() {
 
-    let app = new Vue({
+    app = new Vue({
         el: '#app',
         data: {
-            name: 'hello',
+            areaName: 'china',
             sites:
                 [
                     ["baidu", "https://www.baidu.com", "https://www.baidu.com/favicon.ico"],
@@ -43,7 +43,7 @@ window.addEventListener('load', function name() {
     chart.setOption({
         series: [{
             type: "map",
-            map: mapArea,
+            map: app.areaName,
             top: 10
             // left: "25%",
             // right: "25%"
@@ -59,6 +59,20 @@ window.addEventListener('load', function name() {
 });
 function resizeWindow() {
     chart.resize();
-}
+};
+function areaChange() {
+    if (app.areaName == 'china') app.areaName = 'world';
+    else app.areaName = 'china';
+    chart.setOption({
+        series: [{
+            type: "map",
+            map: app.areaName,
+            top: 10
+            // left: "25%",
+            // right: "25%"
+        }],
+    });
+    chart.resize();
+};
 
 

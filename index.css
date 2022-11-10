@@ -55,6 +55,11 @@
   }
 
   /* box 模块结束 */
+  #mapArea {
+      /* background-color: green; */
+      text-align: center;
+  }
+
   #map {
       margin-left: auto;
       margin-right: auto;

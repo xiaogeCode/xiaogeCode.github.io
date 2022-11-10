@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 
 <head>
     <meta charset="UTF-8">
@@ -19,18 +19,22 @@
 </head>
 
 <body onresize="resizeWindow()">
-    <!-- <div id="map"></div> -->
-    <div id="app" class="box">
-
-        <div v-for="site in sites" class="box-bd">
-            <a :href=site[1]>
-                <img :src=site[1]+"/favicon.ico" alt="" width="32" height="32">
-                <h4>{{site[0]}}</h4>
-            </a>
+    <div id="app">
+        <!-- 导航栏 -->
+        <div class="box">
+            <div v-for="site in sites" class="box-bd">
+                <a :href=site[1]>
+                    <img :src=site[1]+"/favicon.ico" alt="" width="32" height="32">
+                    <h4>{{site[0]}}</h4>
+                </a>
+            </div>
+        </div>
+        <!-- 地图 -->
+        <div id="mapContainer">
+            <div id="mapArea" onclick="areaChange()">{{areaName}}</div>
+            <div id="map"></div>
         </div>
     </div>
-    <!-- <div id="map" style="width:1200px;height:666px;"></div> -->
-    <div id="map"></div>
 
 </body>
 
